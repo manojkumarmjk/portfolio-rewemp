@@ -6,7 +6,7 @@
   <title>Manoj Kumar — Android Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,10 +14,9 @@
 <!-- ═══════════════════ NAVBAR ═══════════════════ -->
 <nav id="navbar" class="navbar">
   <div class="navbar-inner">
-    <div class="nav-logo">
-      <div class="logo-circle">M</div>
-      <span class="logo-text">MK.</span>
-    </div>
+    <a href="#home" class="nav-logo">
+      <img src="assets/logo.svg" alt="MK" class="logo-img">
+    </a>
     <div class="nav-links" id="navLinks">
       <a href="#home" class="nav-link active" data-section="home">Home</a>
       <a href="#services" class="nav-link" data-section="services">Services</a>
@@ -28,6 +27,7 @@
     </div>
     <a href="#contact" class="nav-contact-btn">Contact Me</a>
     <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span class="mobile-toggle-label" id="mobileToggleLabel">Menu</span>
       <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
       <svg class="icon-close hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
@@ -37,8 +37,8 @@
     <a href="#services" class="mobile-link" data-section="services">Services</a>
     <a href="#about" class="mobile-link" data-section="about">About</a>
     <a href="#projects" class="mobile-link" data-section="projects">Projects</a>
-    <a href="#blogs" class="mobile-link" data-section="blogs">Blogs</a>
     <a href="#testimonials" class="mobile-link" data-section="testimonials">Testimonials</a>
+    <a href="#blogs" class="mobile-link" data-section="blogs">Blogs</a>
     <a href="#contact" class="mobile-contact-btn">Contact Me</a>
   </div>
 </nav>
@@ -50,7 +50,7 @@
       <div class="hero-left animate-on-scroll" data-animation="fade-left">
         <div class="hello-tag">
           <span class="hello-line-num">1</span>
-          <span class="hello-keyword">const</span> <span class="hello-var">greeting</span> <span class="hello-op">=</span> <span class="hello-string">"Available for Freelance"</span><span class="hello-op">;</span><span class="hello-cursor"></span>
+          <span class="hello-keyword">const</span> <span class="hello-var">greeting</span> <span class="hello-op">=</span> <span class="hello-string" id="helloTypingText">"Available for Freelance"</span><span class="hello-op">;</span><span class="hello-cursor"></span>
         </div>
         <h1 class="hero-title">
           I'm <span class="accent-serif">Manoj Kumar,</span><br>
@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="hero-chip pill-green">
-          <svg class="hero-chip-arrow" viewBox="0 0 256 256" aria-hidden="true">
+          <svg class="hero-chip-arrow-green" viewBox="0 0 256 256" aria-hidden="true">
             <path d="M230.251,103.83008A15.76842,15.76842,0,0,1,218.96,118.8457l-76.55664,23.55567-23.55566,76.55468a15.76424,15.76424,0,0,1-15.01465,11.292c-.09863.00195-.19922.00293-.29785.00293a15.75666,15.75666,0,0,1-15.09961-10.76563L29.83105,50.18164A15.99955,15.99955,0,0,1,50.18457,29.82812L219.4873,88.43359A15.76429,15.76429,0,0,1,230.251,103.83008Z" fill="currentColor"/>
           </svg>
           <span class="hero-chip-label">Android Expert</span>
@@ -113,75 +113,460 @@
 </section>
 
 <!-- ═══════════════════ MARQUEE BANNER ═══════════════════ -->
-<div class="marquee-banner">
-  <div class="marquee-track">
-    
-    <span class="marquee-item">Android Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Full Stack Web Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">iOS Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">React Native <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Kotlin <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Firebase <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">REST APIs <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">SQL <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Git <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Java <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">MongoDB <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">UI/UX <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Express <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">AWS <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">CI/CD <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Swift <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">JavaScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">TypeScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">React <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Node.js <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Flutter <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <!-- Duplicate for seamless loop -->
-    <span class="marquee-item">Android Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Full Stack Web Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">iOS Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">React Native <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Kotlin <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Firebase <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">REST APIs <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">SQL <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Git <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Java <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">MongoDB <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">UI/UX <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Express <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">AWS <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">CI/CD <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Swift <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">JavaScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">TypeScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">React <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Node.js <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Flutter <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <!-- Third copy for smoother continuous loop -->
-    <span class="marquee-item">Android Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Full Stack Web Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">iOS Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">React Native <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Kotlin <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Firebase <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">REST APIs <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">SQL <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Git <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Java <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">MongoDB <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">UI/UX <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Express <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">AWS <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">CI/CD <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Swift <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">JavaScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">TypeScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">React <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Node.js <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
-    <span class="marquee-item">Flutter <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></span>
+
+
+<div class="marquee-full-bg" style="margin-top: 40px; height: 140px; width: 120%; position: relative;">
+  <div class="marquee-track-bg"
+    style="position: absolute; top: 50%; left: 50%; height: 40px; width: 120%; background: #2e4a2d; transform: translate(-50%, -61%) rotate(358deg);">
   </div>
+  <div class="marquee-banner" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"">
+  <div class=" marquee-track">
+
+    <span class="marquee-item">Android Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Full Stack Web Development <svg class="marquee-star" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">iOS Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">React Native <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Kotlin <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Firebase <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">REST APIs <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">SQL <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Git <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Java <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">MongoDB <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">UI/UX <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Express <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">AWS <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">CI/CD <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Swift <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">JavaScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">TypeScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">React <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Node.js <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Flutter <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item">Android Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Full Stack Web Development <svg class="marquee-star" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">iOS Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">React Native <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Kotlin <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Firebase <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">REST APIs <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">SQL <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Git <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Java <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">MongoDB <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">UI/UX <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Express <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">AWS <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">CI/CD <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Swift <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">JavaScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">TypeScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">React <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Node.js <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Flutter <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <!-- Third copy for smoother continuous loop -->
+    <span class="marquee-item">Android Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Full Stack Web Development <svg class="marquee-star" width="24" height="24"
+        viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">iOS Development <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">React Native <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Kotlin <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Firebase <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">REST APIs <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">SQL <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Git <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Java <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">MongoDB <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">UI/UX <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Express <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">AWS <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">CI/CD <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Swift <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">JavaScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">TypeScript <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">React <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Node.js <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+    <span class="marquee-item">Flutter <svg class="marquee-star" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="#2D4A2D" stroke-width="2.5">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+        <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+      </svg></span>
+  </div>
+</div>
 </div>
 
 <!-- ═══════════════════ SERVICES ═══════════════════ -->
@@ -206,7 +591,7 @@
         </div>
         <h3 class="service-title">Android Development</h3>
         <p class="service-desc">Native Android apps in Java & Kotlin with clean architecture, Firebase integration, and Play Store deployment.</p>
-        <button class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
       </div>
       <!-- Card 2 -->
       <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="150">
@@ -215,7 +600,7 @@
         </div>
         <h3 class="service-title">iOS Development</h3>
         <p class="service-desc">High-quality iOS applications using Swift and Objective-C, optimized for the Apple ecosystem.</p>
-        <button class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
       </div>
       <!-- Card 3 -->
       <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="300">
@@ -223,8 +608,8 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h3 class="service-title">Web Development</h3>
-        <p class="service-desc">Responsive websites & web apps using Next.js, React, HTML/CSS/JS, MongoDB, and PHP backends.</p>
-        <button class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+        <p class="service-desc">Responsive websites & web apps using Next.js, Tailwind, ShadCn, Clerk, Supabase, and React.</p>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
       </div>
       <!-- Card 4 -->
       <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="450">
@@ -233,7 +618,7 @@
         </div>
         <h3 class="service-title">UI/UX & Design</h3>
         <p class="service-desc">Clean, intuitive UI designs using modern design principles. PhotoShop editing and landing page design.</p>
-        <button class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
       </div>
       <!-- Card 5 -->
       <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="500">
@@ -242,7 +627,7 @@
         </div>
         <h3 class="service-title">Backend & Database</h3>
         <p class="service-desc">RESTful APIs, Firebase, MongoDB, and PHP backends to power your applications securely.</p>
-        <button class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
       </div>
       <!-- Card 6 -->
       <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="550">
@@ -251,7 +636,25 @@
         </div>
         <h3 class="service-title">App Deployment</h3>
         <p class="service-desc">End-to-end deployment on Google Play Store, Apple App Store, and cloud hosting platforms.</p>
-        <button class="service-link">Learn more <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+      </div>
+      <!-- Card 7 -->
+      <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="600">
+        <div class="service-icon bg-gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3 class="service-title">Cross-Platform Development</h3>
+        <p class="service-desc">React Native & Flutter apps for Android and iOS from one codebase. Faster delivery and lower maintenance.</p>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+      </div>
+      <!-- Card 8 -->
+      <div class="service-card animate-on-scroll" data-animation="fade-up" data-delay="650">
+        <div class="service-icon bg-gold">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3 class="service-title">API Integration</h3>
+        <p class="service-desc">REST API design, third-party integrations, and backend connectivity. Connect your app to payment, maps, and more.</p>
+        <button class="service-link">Learn more <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
       </div>
     </div>
   </div>
@@ -317,45 +720,93 @@
     <div class="tools-grid">
       <div class="tool-item animate-on-scroll" data-animation="fade-up">
         <div class="tool-pill">
-          <div class="tool-icon" style="background-color:#3DDC84">An</div>
+          <div class="tool-icon" style="background-color:#3DDC84">
+            <img src="https://cdn.simpleicons.org/android/ffffff" alt="Android" class="tool-logo tool-logo-android">
+          </div>
         </div>
         <p class="tool-pct">92%</p>
         <p class="tool-name">Android</p>
       </div>
       <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="100">
         <div class="tool-pill">
-          <div class="tool-icon" style="background-color:#7F52FF">Ko</div>
+          <div class="tool-icon" style="background-color:#7F52FF">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="tool-logo">
+          </div>
         </div>
         <p class="tool-pct">90%</p>
         <p class="tool-name">Kotlin</p>
       </div>
       <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="200">
         <div class="tool-pill">
-          <div class="tool-icon" style="background-color:#ED8B00">Ja</div>
+          <div class="tool-icon" style="background-color:#ED8B00">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="tool-logo">
+          </div>
         </div>
         <p class="tool-pct">85%</p>
         <p class="tool-name">Java</p>
       </div>
       <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="300">
         <div class="tool-pill">
-          <div class="tool-icon" style="background-color:#F05138">Sw</div>
+          <div class="tool-icon" style="background-color:#F05138">
+            <img src="https://cdn.simpleicons.org/swift/ffffff" alt="Swift" class="tool-logo tool-logo-swift">
+          </div>
         </div>
         <p class="tool-pct">75%</p>
         <p class="tool-name">Swift</p>
       </div>
       <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="400">
         <div class="tool-pill">
-          <div class="tool-icon" style="background-color:#000000">Nx</div>
+          <div class="tool-icon" style="background-color:#000000">
+            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js" class="tool-logo tool-logo-nextjs">
+          </div>
         </div>
         <p class="tool-pct">85%</p>
         <p class="tool-name">Next.js</p>
       </div>
       <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="500">
         <div class="tool-pill">
-          <div class="tool-icon" style="background-color:#FFCA28">Fi</div>
+          <div class="tool-icon" style="background-color:#FFCA28">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase" class="tool-logo">
+          </div>
         </div>
         <p class="tool-pct">88%</p>
         <p class="tool-name">Firebase</p>
+      </div>
+      <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="550">
+        <div class="tool-pill">
+          <div class="tool-icon" style="background-color:#61DAFB">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="tool-logo">
+          </div>
+        </div>
+        <p class="tool-pct">82%</p>
+        <p class="tool-name">React</p>
+      </div>
+      <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="600">
+        <div class="tool-pill">
+          <div class="tool-icon" style="background-color:#222222">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Native" class="tool-logo">
+          </div>
+        </div>
+        <p class="tool-pct">80%</p>
+        <p class="tool-name">React Native</p>
+      </div>
+      <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="650">
+        <div class="tool-pill">
+          <div class="tool-icon" style="background-color:#47A248">
+            <img src="https://cdn.simpleicons.org/mongodb/ffffff" alt="MongoDB" class="tool-logo tool-logo-mongodb">
+          </div>
+        </div>
+        <p class="tool-pct">85%</p>
+        <p class="tool-name">MongoDB</p>
+      </div>
+      <div class="tool-item animate-on-scroll" data-animation="fade-up" data-delay="700">
+        <div class="tool-pill">
+          <div class="tool-icon" style="background-color:#339933">
+            <img src="https://cdn.simpleicons.org/nodedotjs/ffffff" alt="Node.js" class="tool-logo tool-logo-nodejs">
+          </div>
+        </div>
+        <p class="tool-pct">82%</p>
+        <p class="tool-name">Node.js</p>
       </div>
     </div>
   </div>
@@ -375,72 +826,77 @@
       </a>
     </div>
     <div class="projects-grid">
-      <div class="project-card animate-on-scroll" data-animation="fade-up">
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-project-id="0">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="PhotoShop Editing">
+          <img src="assets/ev-app.webp" alt="ChargeGrid – EV Charger Locator">
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="project-tag">Adobe PhotoShop</span>
-            <span class="project-tag">Design</span>
+            <span class="project-tag">Kotlin</span>
+            <span class="project-tag">Android</span>
+            <span class="project-tag">Firebase</span>
           </div>
           <div class="project-bottom">
-            <h3 class="project-title">PhotoShop Editing</h3>
-            <button class="project-arrow-btn"><svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+            <h3 class="project-title">ChargeGrid – EV Charger Locator</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
           </div>
         </div>
       </div>
-      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="100" data-project-id="1">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Personal Portfolio">
+          <img src="assets/9ad09b6874b5b78c8edaee5f760c0ffe.webp" alt="Portfolio Pro – Developer Showcase">
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">ShadCn</span>
+            <span class="project-tag">Clerk</span>
+            <span class="project-tag">Supabase</span>
           </div>
           <div class="project-bottom">
-            <h3 class="project-title">Personal Portfolio Website</h3>
-            <button class="project-arrow-btn"><svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+            <h3 class="project-title">Portfolio Pro – Developer Showcase</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
           </div>
         </div>
       </div>
-      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="200" data-project-id="2">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&h=400&fit=crop" alt="App Landing Page">
+          <img src="assets/saas-website.webp" alt="LaunchPad – SaaS Landing Platform">
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JS</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">ShadCn</span>
+            <span class="project-tag">Clerk</span>
+            <span class="project-tag">Supabase</span>
           </div>
           <div class="project-bottom">
-            <h3 class="project-title">App Landing Page</h3>
-            <button class="project-arrow-btn"><svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+            <h3 class="project-title">LaunchPad – SaaS Landing Platform</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
           </div>
         </div>
       </div>
-      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="300" data-project-id="3">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1497515114889-1c06f2eb04c3?w=600&h=400&fit=crop" alt="Restaurant Webpage">
+          <img src="assets/heath-app.webp" alt="FitFusion Fitness Tracker">
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JS</span>
+            <span class="project-tag">Android</span>
+            <span class="project-tag">Kotlin</span>
+            <span class="project-tag">Supabase</span>
           </div>
           <div class="project-bottom">
-            <h3 class="project-title">Restaurant Webpage</h3>
-            <button class="project-arrow-btn"><svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+            <h3 class="project-title">FitFusion Fitness Tracker</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
           </div>
         </div>
       </div>
-      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="400">
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="400" data-project-id="4">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Trakbond Mobile App">
+          <img src="assets/quick-commerce.webp" alt="QuickBite – Food Delivery App">
         </div>
         <div class="project-body">
           <div class="project-tags">
@@ -449,29 +905,88 @@
             <span class="project-tag">Firebase</span>
           </div>
           <div class="project-bottom">
-            <h3 class="project-title">Trakbond Mobile App</h3>
-            <button class="project-arrow-btn"><svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+            <h3 class="project-title">QuickBite – Food Delivery App</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
           </div>
         </div>
       </div>
-      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="500">
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="500" data-project-id="5">
         <div class="project-img-wrap">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Aime Store">
+          <img src="assets/aimestore.webp" alt="Aime Store – E-Commerce Platform">
         </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="project-tag">Android</span>
-            <span class="project-tag">Web</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Tailwind</span>
+            <span class="project-tag">ShadCn</span>
+            <span class="project-tag">Clerk</span>
+            <span class="project-tag">Supabase</span>
           </div>
           <div class="project-bottom">
-            <h3 class="project-title">Aime Store – Dekeract</h3>
-            <button class="project-arrow-btn"><svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+            <h3 class="project-title">Aime Store – E-Commerce Platform (Android/iOS)</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="600" data-project-id="6">
+        <div class="project-img-wrap">
+          <img src="assets/task-mgmt.webp" alt="TaskFlow – Task Management App">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Android</span>
+            <span class="project-tag">Kotlin</span>
+            <span class="project-tag">Room DB</span>
+          </div>
+          <div class="project-bottom">
+            <h3 class="project-title">TaskFlow – Task Management App</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="700" data-project-id="7">
+        <div class="project-img-wrap">
+          <img src="assets/ride-app.webp" alt="RideShare – Cab Booking App">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Android</span>
+            <span class="project-tag">Kotlin</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+          <div class="project-bottom">
+            <h3 class="project-title">RideShare – Cab Booking App</h3>
+            <button class="project-arrow-btn"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Project Modal -->
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
+  <div class="project-modal-dialog" id="projectModalDialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <button class="project-modal-close" id="projectModalClose" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="project-modal-content">
+      <div class="project-modal-hero">
+        <img id="projectModalImage" src="" alt="">
+      </div>
+      <div class="project-modal-body">
+        <div class="project-modal-meta">
+          <span class="project-modal-tags" id="projectModalTags"></span>
+        </div>
+        <h2 class="project-modal-title" id="projectModalTitle"></h2>
+        <p class="project-modal-desc" id="projectModalDesc"></p>
+        <div class="project-modal-article" id="projectModalArticle"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ═══════════════════ JOURNEY ═══════════════════ -->
 <section class="journey-section">
@@ -544,7 +1059,7 @@
 
 <!-- ═══════════════════ PRICING ═══════════════════ -->
 <section class="pricing-section">
-  <div class="container">
+  <div class="container" style="width: 60%;">
     <div class="section-header">
       <div>
         <p class="section-label light"><span class="label-line"></span> Transparent Pricing</p>
@@ -554,7 +1069,7 @@
         <span>Get Started</span>
         <span class="btn-gold-arrow">
           <span class="btn-gold-inner">
-            <svg width="14" height="14" viewBox="0 0 25 24" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            <svg width="24" height="24" viewBox="0 0 25 24" fill="none"><path fill="#1A1A1A" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
           </span>
         </span>
       </a>
@@ -565,18 +1080,18 @@
         <div class="pricing-card-top">
           <span class="pricing-name">Basic</span>
           <div class="pricing-icon-circle gold">
-            <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
           </div>
         </div>
         <div class="pricing-price">
-          <span class="pricing-amount gold-text">$80</span>
+          <span class="pricing-amount gold-text">$120</span>
           <span class="pricing-period">/ project</span>
         </div>
         <div class="pricing-features">
-          <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Single-page website</div>
+          <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Single-page website or App Prototype</div>
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Responsive design</div>
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Contact form</div>
-          <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 3-day delivery</div>
+          <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 7-day delivery</div>
           <div class="pricing-feature inactive"><span class="check-circle dim"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text">1 revision round</span></div>
           <div class="pricing-feature inactive"><span class="check-circle dim"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text">—</span></div>
           <div class="pricing-feature inactive"><span class="check-circle dim"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text">—</span></div>
@@ -588,22 +1103,22 @@
         <div class="pricing-card-top">
           <span class="pricing-name">Standard ✦ Popular</span>
           <div class="pricing-icon-circle green">
-            <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="white" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="white" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
           </div>
         </div>
         <div class="pricing-price">
-          <span class="pricing-amount dark-text">$600</span>
+          <span class="pricing-amount dark-text">$800</span>
           <span class="pricing-period dark-period">/ project</span>
         </div>
         <div class="pricing-features">
           <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Multi-page website or app</div>
-          <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Firebase / backend integration</div>
+          <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Supabase / Clerk / Firebase / Backend integration</div>
           <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Admin panel included</div>
-          <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 10-day delivery</div>
-          <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 3 revision rounds</div>
+          <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 30-day delivery</div>
+          <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 5 revision rounds</div>
           <div class="pricing-feature active"><span class="check-circle green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Play Store deployment</div>
-          <div class="pricing-feature inactive"><span class="check-circle dim-h"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(26,26,26,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text-h">Explicabo. Nemo enim</span></div>
-          <div class="pricing-feature inactive"><span class="check-circle dim-h"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(26,26,26,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text-h">Nemo enim ipsam voluptatem</span></div>
+          <div class="pricing-feature inactive"><span class="check-circle dim-h"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(26,26,26,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text-h">App Store deployment</span></div>
+          <div class="pricing-feature inactive"><span class="check-circle dim-h"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(26,26,26,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <span class="dim-text-h">6-month support</span></div>
         </div>
       </div>
       <!-- Quarterly -->
@@ -611,7 +1126,7 @@
         <div class="pricing-card-top">
           <span class="pricing-name">Premium</span>
           <div class="pricing-icon-circle gold">
-            <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
           </div>
         </div>
         <div class="pricing-price">
@@ -622,7 +1137,7 @@
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Full Android + iOS app</div>
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Web dashboard included</div>
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Custom backend / API</div>
-          <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 21-day delivery</div>
+          <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 3 Months delivery</div>
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited revisions</div>
           <div class="pricing-feature active"><span class="check-circle gold"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 6-month support</div>
         </div>
@@ -642,27 +1157,27 @@
         <div class="contact-info-list">
           <div class="contact-info-item">
             <div class="contact-icon-circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <span>+91 98**** ****</span>
           </div>
           <div class="contact-info-item">
             <div class="contact-icon-circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
-            <span>bymjk737@gmail.com</span>
+            <span>support@bymjk.com</span>
           </div>
-          <div class="contact-info-item">
+          <div class="contact-info-item" style="display: none;">
             <div class="contact-icon-circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
             </div>
             <span>—</span>
           </div>
           <div class="contact-info-item">
             <div class="contact-icon-circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2D4A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <span>Greater Noida, India</span>
+            <span>India</span>
           </div>
         </div>
       </div>
@@ -679,7 +1194,7 @@
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label>Phone *</label>
+            <label>Phone (optional)</label>
             <input type="tel" placeholder="Enter Phone Number">
           </div>
           <div class="form-group">
@@ -690,6 +1205,8 @@
               <option>iOS App</option>
               <option>Web Development</option>
               <option>Full-Stack Project</option>
+              <option>App Performance Optimization</option>
+              <option>Web Performance Optimization</option>
               <option>Other</option>
             </select>
           </div>
@@ -699,23 +1216,21 @@
             <label>Budget Range (USD) *</label>
             <select>
               <option value="">Select Range</option>
-              <option>$1k - $5k</option>
+              <option>$80 - $200</option>
+              <option>$200 - $500</option>
+              <option>$500 - $1k</option>
+              <option>$1k - $2k</option>
+              <option>$2k - $5k</option>
               <option>$5k - $10k</option>
-              <option>$10k - $25k</option>
-              <option>$25k+</option>
             </select>
           </div>
           <div class="form-group">
             <label>Country *</label>
-            <select>
-              <option value="">Select Country</option>
-              <option>United States</option>
-              <option>United Kingdom</option>
-              <option>Canada</option>
-              <option>Australia</option>
-              <option>Germany</option>
-              <option>Other</option>
-            </select>
+            <div class="country-search-wrap" id="countrySearchWrap">
+              <input type="text" class="country-search-input" id="countrySearchInput" placeholder="Search or select country" autocomplete="nope">
+              <input type="hidden" name="country" id="countryValue">
+              <div class="country-dropdown" id="countryDropdown" role="listbox"></div>
+            </div>
           </div>
         </div>
         <div class="form-group full">
@@ -738,7 +1253,7 @@
 <!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
 <section id="testimonials" class="testimonials-section">
   <div class="container text-center">
-    <p class="section-label centered"><span class="label-line"></span> Client Reviews</p>
+    <p class="section-label centered"><span class="label-line"></span> Clients Testimonials</p>
     <h2 class="section-title">The Impact of My Work:<br><span class="accent-serif">Client Testimonials</span></h2>
     <div class="testimonial-carousel">
       <div class="testimonial-track" id="testimonialTrack">
@@ -754,9 +1269,9 @@
           </div>
           <p class="testimonial-text">Manoj delivered our Android app on time with excellent quality. He understood our requirements perfectly and the code was clean and well-structured.</p>
           <div class="testimonial-author">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop&crop=face" alt="Rahul Kumar">
+            <div class="testimonial-avatar avatar-1">PS</div>
             <div>
-              <p class="author-name">Rahul Kumar</p>
+              <p class="author-name">Pooja Sharma</p>
               <p class="author-title">CEO, Dekeract Pvt. Ltd.</p>
             </div>
           </div>
@@ -773,10 +1288,10 @@
           </div>
           <p class="testimonial-text">Exceptional web developer! He revamped our website within the deadline and it looks amazing. Very professional and responsive to feedback throughout.</p>
           <div class="testimonial-author">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Ankit Patel">
+            <div class="testimonial-avatar avatar-2">SD</div>
             <div>
-              <p class="author-name">Ankit Patel</p>
-              <p class="author-title">Manager, Rudra Robotics</p>
+              <p class="author-name">Steven David & Tushar Gaurav</p>
+              <p class="author-title">Directors, Rudra Robotics</p>
             </div>
           </div>
         </div>
@@ -792,10 +1307,48 @@
           </div>
           <p class="testimonial-text">Working with Manoj was a great experience. He built our tracking app with a beautiful UI. Very knowledgeable in both Android and web technologies.</p>
           <div class="testimonial-author">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Siddharth Mehta">
+            <div class="testimonial-avatar avatar-3">SM</div>
             <div>
               <p class="author-name">Siddharth Mehta</p>
               <p class="author-title">Product Lead, Trakbond</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="testimonial-card" data-index="3">
+          <div class="stars">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span class="rating-num">5.0</span>
+          </div>
+          <p class="testimonial-text">Outstanding iOS developer! Manoj delivered our Swift app with clean code and intuitive design. He was always available for support and delivered ahead of schedule.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar avatar-4">VS</div>
+            <div>
+              <p class="author-name">Vikram Singh</p>
+              <p class="author-title">Founder, TechStart Solutions</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="testimonial-card" data-index="4">
+          <div class="stars">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" stroke="#F5A623" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span class="rating-num">5.0</span>
+          </div>
+          <p class="testimonial-text">Highly recommend Manoj for any mobile or web project. His Firebase integration was seamless and the app performance is excellent. A true professional!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar avatar-5">PS</div>
+            <div>
+              <p class="author-name">Priya Sharma</p>
+              <p class="author-title">CTO, Innovate Labs</p>
             </div>
           </div>
         </div>
@@ -803,10 +1356,10 @@
     </div>
     <div class="testimonial-nav">
       <button class="testimonial-btn prev" id="testimonialPrev">
-        <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:scaleX(-1)"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+        <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:scaleX(-1)"><path fill="#F5A623" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
       </button>
       <button class="testimonial-btn next" id="testimonialNext">
-        <svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+        <svg width="36" height="36" viewBox="0 0 25 24" fill="none"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
       </button>
     </div>
   </div>
@@ -818,68 +1371,138 @@
     <div class="section-header">
       <div>
         <p class="section-label"><span class="label-line"></span> News &amp; Blogs</p>
-        <h2 class="section-title">Our Latest<br><span class="accent-serif">News &amp; Blogs</span></h2>
+        <h2 class="section-title">My Latest<br><span class="accent-serif">Tech &amp; Industry</span> Insights</h2>
       </div>
-      <a href="#" class="btn-primary-arrow sm">
-        <span>View All Blogs</span>
-        <span class="btn-arrow-circle"><svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg></span>
-      </a>
     </div>
-    <div class="blog-grid">
-      <div class="blog-card animate-on-scroll" data-animation="fade-up">
+    <div class="blog-grid" id="blogGrid">
+      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-blog-id="0">
         <div class="blog-img-wrap">
-          <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&h=280&fit=crop" alt="Minimalist UI Design">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=280&fit=crop" alt="Kotlin Coroutines">
           <div class="blog-overlay">
             <div class="blog-overlay-icon">
-              <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
             </div>
           </div>
         </div>
         <div class="blog-tags">
-          <span class="blog-tag">App UIUX Design</span>
-          <span class="blog-tag">21 May 2024</span>
+          <span class="blog-tag">Android</span>
+          <span class="blog-tag">15 Mar 2025</span>
         </div>
-        <h3 class="blog-title">Minimalist UI Design: Benefits and Best Practices</h3>
-        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+        <h3 class="blog-title">Kotlin Coroutines: Mastering Async Programming in Android</h3>
+        <p class="blog-desc">Learn how Kotlin Coroutines simplify asynchronous code, replace callbacks, and handle background tasks elegantly in your Android apps.</p>
         <span class="blog-readmore">Read More</span>
       </div>
-      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="150">
+      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="100" data-blog-id="1">
         <div class="blog-img-wrap">
-          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=280&fit=crop" alt="Improving User Experience">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=280&fit=crop" alt="Jetpack Compose">
           <div class="blog-overlay">
             <div class="blog-overlay-icon">
-              <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
             </div>
           </div>
         </div>
         <div class="blog-tags">
-          <span class="blog-tag">Website UIUX Design</span>
-          <span class="blog-tag">20 May 2024</span>
+          <span class="blog-tag">Jetpack Compose</span>
+          <span class="blog-tag">12 Mar 2025</span>
         </div>
-        <h3 class="blog-title">Improving User Experience: Best Practices for Web Desig...</h3>
-        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+        <h3 class="blog-title">Jetpack Compose: Building Declarative UIs the Modern Way</h3>
+        <p class="blog-desc">Discover how Compose revolutionizes Android UI development with declarative syntax, state management, and seamless Material Design 3.</p>
         <span class="blog-readmore">Read More</span>
       </div>
-      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="200" data-blog-id="2">
         <div class="blog-img-wrap">
-          <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=400&h=280&fit=crop" alt="Understanding the Color Wheel">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=280&fit=crop" alt="Clean Architecture">
           <div class="blog-overlay">
             <div class="blog-overlay-icon">
-              <svg width="16" height="16" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
             </div>
           </div>
         </div>
         <div class="blog-tags">
-          <span class="blog-tag">Color Theory</span>
-          <span class="blog-tag">19 May 2024</span>
+          <span class="blog-tag">Architecture</span>
+          <span class="blog-tag">8 Mar 2025</span>
         </div>
-        <h3 class="blog-title">Understanding the Color Wheel: Basics Every Designe...</h3>
-        <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+        <h3 class="blog-title">Clean Architecture in Android: Scalable & Maintainable Apps</h3>
+        <p class="blog-desc">Implement Clean Architecture with Use Cases, Repositories, and dependency injection for production-ready Android applications.</p>
+        <span class="blog-readmore">Read More</span>
+      </div>
+      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="100" data-blog-id="3">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=280&fit=crop" alt="Firebase vs Supabase">
+          <div class="blog-overlay">
+            <div class="blog-overlay-icon">
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="blog-tags">
+          <span class="blog-tag">Backend</span>
+          <span class="blog-tag">5 Mar 2025</span>
+        </div>
+        <h3 class="blog-title">Firebase vs Supabase: Choosing the Right BaaS for Your App</h3>
+        <p class="blog-desc">A practical comparison of Firebase and Supabase for auth, real-time DB, storage, and when to choose each for mobile and web.</p>
+        <span class="blog-readmore">Read More</span>
+      </div>
+      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="150" data-blog-id="4">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=280&fit=crop" alt="React Native vs Flutter">
+          <div class="blog-overlay">
+            <div class="blog-overlay-icon">
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="blog-tags">
+          <span class="blog-tag">Cross-Platform</span>
+          <span class="blog-tag">1 Mar 2025</span>
+        </div>
+        <h3 class="blog-title">React Native vs Flutter: Which Framework Fits Your Project?</h3>
+        <p class="blog-desc">Evaluate performance, developer experience, ecosystem, and hiring when deciding between React Native and Flutter for cross-platform apps.</p>
+        <span class="blog-readmore">Read More</span>
+      </div>
+      <div class="blog-card animate-on-scroll" data-animation="fade-up" data-delay="200" data-blog-id="5">
+        <div class="blog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=280&fit=crop" alt="Material Design 3">
+          <div class="blog-overlay">
+            <div class="blog-overlay-icon">
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none" style="transform:rotate(-45deg)"><path fill="#2D4A2D" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="blog-tags">
+          <span class="blog-tag">UI/UX</span>
+          <span class="blog-tag">25 Feb 2025</span>
+        </div>
+        <h3 class="blog-title">Material Design 3: Dynamic Color &amp; New Components</h3>
+        <p class="blog-desc">Explore Material You's dynamic theming, updated components, and how to implement them in Jetpack Compose and web.</p>
         <span class="blog-readmore">Read More</span>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Blog Modal -->
+<div class="blog-modal" id="blogModal" aria-hidden="true">
+  <div class="blog-modal-backdrop" id="blogModalBackdrop"></div>
+  <div class="blog-modal-dialog" id="blogModalDialog" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
+    <button class="blog-modal-close" id="blogModalClose" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="blog-modal-content">
+      <div class="blog-modal-hero">
+        <img id="blogModalImage" src="" alt="">
+      </div>
+      <div class="blog-modal-body">
+        <div class="blog-modal-meta">
+          <span class="blog-modal-tags" id="blogModalTags"></span>
+          <span class="blog-modal-date" id="blogModalDate"></span>
+        </div>
+        <h2 class="blog-modal-title" id="blogModalTitle"></h2>
+        <div class="blog-modal-article" id="blogModalArticle"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ═══════════════════ FAQ ═══════════════════ -->
 <section class="faq-section">
@@ -896,7 +1519,7 @@
           <svg class="faq-icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
         <div class="faq-answer">
-          <p>I develop for Android (Java/Kotlin), iOS (Swift), and web (Next.js, HTML/CSS/JS). I can also handle cross-platform projects with Firebase integration.</p>
+          <p>I develop for Android (Java/Kotlin), iOS (Swift), and web (Next.js, Tailwind, ShadCn, Clerk, Supabase). I can also handle cross-platform projects with Firebase integration.</p>
         </div>
       </div>
       <div class="faq-item active">
@@ -977,10 +1600,9 @@
       </div>
       <div class="footer-columns">
         <div class="footer-brand">
-          <div class="nav-logo">
-            <div class="logo-circle">M</div>
-            <span class="logo-text dark">MK.</span>
-          </div>
+          <a href="#home" class="nav-logo">
+            <img src="assets/logo.svg" alt="MK" class="logo-img">
+          </a>
           <p class="footer-brand-desc">Building seamless mobile & web experiences. Android, iOS, and full-stack development. Based in Greater Noida, India.</p>
           <div class="social-icons">
             <span class="social-icon">Fb</span>
@@ -1006,7 +1628,7 @@
           <ul>
             <li>+91 98**** ****</li>
             <li>www.bymjk.com</li>
-            <li>bymjk737@gmail.com</li>
+            <li>support@bymjk.com</li>
             <li>Greater Noida, India</li>
           </ul>
         </div>
@@ -1015,7 +1637,7 @@
           <div class="newsletter-input">
             <input type="email" placeholder="Email address">
             <button class="newsletter-btn">
-              <svg width="16" height="16" viewBox="0 0 25 24" fill="none"><path fill="white" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
+              <svg width="26" height="26" viewBox="0 0 25 24" fill="none"><path fill="white" fill-rule="evenodd" d="M20.25 11c-2.438 0-4.66-2.22-4.66-4.66v-1h-2v1c0 1.774.778 3.438 1.999 4.66H3.25v2h12.339c-1.221 1.222-1.999 2.886-1.999 4.66v1h2v-1c0-2.439 2.222-4.66 4.66-4.66h1v-2z" clip-rule="evenodd"/></svg>
             </button>
           </div>
         </div>
